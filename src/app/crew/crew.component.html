@@ -1,0 +1,6 @@
+<p>crew works!</p>
+<button (click)="tes()">Tes</button>
+<app-crew-designations [(message)]="tes1" [token]="userToken"
+    (messageEvent)="receingMessage($event)"></app-crew-designations>
+
+<p>{{ receivedMessage }}</p>

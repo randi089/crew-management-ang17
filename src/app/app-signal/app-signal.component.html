@@ -1,0 +1,22 @@
+<div class="row d-flex justify-content-center ">
+    <div class="col-3 mt mc">
+        <h3>Price: <span class="gn">${{ price() }}</span></h3>
+        <h3>Color: <span class="gn">{{ color }}</span></h3>
+        <label for="redeem">Kode Diskon :</label><input type="text" [(ngModel)]="kode" id="redeem">
+
+        <div class="room">
+            <div class="min mr blok" (click)="min()">-</div>
+            <div class="value mr blok">{{ value() }}</div>
+            <div class="add blok" (click)="add()">+</div>
+
+            <h3>Total : <span class="bBottom gn">${{ total() }}</span></h3>
+        </div>
+    </div>
+
+    <div class="col-3 text-center mc">
+        <img src="assets/img/item.png" width="200" class="img">
+        <div class="black mr" (click)="black()"></div>
+        <div class="brown mr" (click)="brown()"></div>
+        <div class="red" (click)="red()"></div>
+    </div>
+</div>

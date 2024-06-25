@@ -1,0 +1,19 @@
+<p>attribute-directives works!</p>
+
+<div [ngClass]="{'active': isActive, 'inactive': !isActive}">
+    This is a section to show/hide button clicked
+</div>
+
+<button (click)="toogleActive()">Toggle Active</button>
+
+<div [ngStyle]="{'height': '80px', 'background-color': backgroundColor, 'font-size.px': fontSize}">
+    Update a style property using attribute directive
+</div>
+
+<button (click)="updateStyle()">Style Update</button>
+
+<br>
+
+<input [(ngModel)]="name" placeholder="enter text">
+
+<p>Hello {{ name }}</p>

@@ -1,0 +1,17 @@
+<p>Component loaded from lazy loading module</p>
+
+{{ adminName }}
+
+<a [href]="anchorUrl">Link building with Property Binding</a>
+
+<button [disabled]="disabled">Please Subscribe</button>
+
+<div [class]="className">This is div</div>
+
+<!-- <img [src]="imageUrl"> -->
+
+<button (click)="buttonClicked()">Click the button</button>
+
+<input type="text" (keyup)="captureValue($event)">
+
+<div (mouseover)="onMouseOver($event)" (mouseout)="onMouseOut($event)">This is multiple events binded</div>

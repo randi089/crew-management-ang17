@@ -1,0 +1,126 @@
+.img {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.black {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.brown {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.red {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.red:hover,
+.brown:hover,
+.black:hover,
+.min:hover,
+.add:hover {
+    opacity: .7;
+}
+
+.mr {
+    margin-right: 5px;
+}
+
+.mt {
+    margin-top: 50px;
+}
+
+.room {
+    margin-top: 200px;
+    width: 100%;
+}
+
+.add {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    display: inline-block;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.value {
+    width: 100px;
+    height: 30px;
+    background-color: cadetblue;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.min {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.blok {    
+    user-select: none;
+}
+
+.bBottom {
+    border-bottom: 1px solid black;
+}
+
+.gn {
+    color: limegreen;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    .red, .black, .brown {
+        width: 40px;
+        height: 40px;
+    }
+    .mc {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mc {
+        width: 50%;
+    }
+}

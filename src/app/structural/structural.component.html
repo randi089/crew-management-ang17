@@ -1,0 +1,43 @@
+<p>structural works!</p>
+
+<div *ngIf="a > b">
+    A is greater
+</div>
+
+<div *ngIf="b > a">
+    B is greater
+</div>
+
+@if (a > b) {
+    {{ a }} is greater than {{ b }}
+} @else {
+    {{ b }} is greater than {{ a }}
+}
+
+<div *ngFor="let item of items">
+    {{ item }}
+</div>
+
+<h3>Using new &#64;For</h3>
+@for (item of items; track item) {
+    <div>{{ item }}</div>
+}
+
+@switch (userRole) {
+    @case ('admin') {
+        <p>User is admin</p>
+    }
+    @case ('manager') {
+        <p>User is manager</p>
+    }
+    @default {
+        <p>User is default</p>
+    }
+}
+
+<h3>Combine</h3>
+@if (a > b) {
+    @for (item of items; track item) {
+        <div>{{ item }}</div>
+    }
+}
